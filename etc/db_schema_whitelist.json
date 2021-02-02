@@ -1,0 +1,11 @@
+{
+    "sqli_donation_donation": {
+        "column": {
+            "donation_id": true,
+            "donation_amount": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

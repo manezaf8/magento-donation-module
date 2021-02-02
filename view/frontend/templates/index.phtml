@@ -1,0 +1,24 @@
+<?php
+/**
+ * @var $block \Sqli\Donation\Block\Index
+ */
+?>
+<h />
+
+<table>
+     <tr>
+          <th>Donation Id</th>
+          <th>Donation Amount</th>
+     </tr>
+ 
+     <?php
+          $collection = $block->getResult();
+          foreach($collection as $data){
+     ?>
+     <tr>
+          <td><?php echo $data->getData('donation_id'); ?></td>
+          <td><?php echo $data->getData('donation'); ?> </td>
+     </tr>
+     <?php } ?>
+</table>
+

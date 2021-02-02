@@ -1,0 +1,16 @@
+<div id="donation-component" data-bind="scope:'donationcomponent'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+    <script type="text/x-magento-init">
+    {
+        "#donation-component": {
+            "Magento_Ui/js/core/app": {
+               "components": {
+                    "donationcomponent": {
+                        "component": "Sqli_Donation/js/view/donation-checkout-form"
+                    }
+                }
+            }
+        }
+    }
+    </script>
+</div>

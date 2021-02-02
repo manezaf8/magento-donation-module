@@ -1,0 +1,75 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="checkout.root">
+                <arguments>
+                    <argument name="jsLayout" xsi:type="array">
+                        <item name="components" xsi:type="array">
+                            <item name="checkout" xsi:type="array">
+                                <item name="children" xsi:type="array">
+                                    <item name="steps" xsi:type="array">
+                                        <item name="children" xsi:type="array">
+                                            <item name="shipping-step" xsi:type="array">
+                                                <item name="children" xsi:type="array">
+                                                    <item name="shippingAddress" xsi:type="array">
+                                                        <item name="children" xsi:type="array">
+                                                            <item name="before-form" xsi:type="array">
+                                                                <item name="children" xsi:type="array">
+                                        
+                                                                    <!-- new form -->
+                                                                    <item name="donation-checkout-form-container" xsi:type="array">
+                                                                        <!--links to js file to load data-->
+                                                                        <item name="component" xsi:type="string">Sqli_Donation/js/view/donation-checkout-form</item>
+                                                                        <item name="provider" xsi:type="string">checkoutProvider</item>
+                                                                        <item name="config" xsi:type="array">
+                                                                            <!--links to html file to rander buttons-->
+                                                                            <item name="template" xsi:type="string">Sqli_Donation/donation-checkout-form</item>
+                                                                        </item>
+                                                                        <!-- new element -->
+                                                                        <item name="children" xsi:type="array">
+                                                                            <item name="donation-checkout-form-fieldset" xsi:type="array">
+                                                                                <!-- uiComponent is used as a wrapper for form fields (its template will render all children as a list) -->
+                                                                                <item name="component" xsi:type="string">uiComponent</item>
+                                                                                <!-- the following display area is used in template (see below) -->
+                                                                                <item name="displayArea" xsi:type="string">donation-checkout-form-fields</item>
+                                                                                <item name="children" xsi:type="array">
+                                                                                    <item name="donation_amount" xsi:type="array">
+                                                                                        <item name="component" xsi:type="string">Magento_Ui/js/form/element/abstract</item>
+                                                                                        <item name="config" xsi:type="array">
+                                                                                            <!-- donationScope is used to group elements within a single form (e.g. they can be validated separately) -->
+                                                                                            <item name="donationScope" xsi:type="string">donationCheckoutForm</item>
+                                                                                            <item name="template" xsi:type="string">ui/form/field</item>
+                                                                                            <item name="elementTmpl" xsi:type="string">ui/form/element/input</item>
+                                                                                        </item>
+                                                                                        <item name="provider" xsi:type="string">checkoutProvider</item>
+                                                                                        <item name="dataScope" xsi:type="string">donationCheckoutForm.donation_amount</item>
+                                                                                        <item name="label" xsi:type="string">Enter Donation Amount</item>
+                                                                                        <item name="sortOrder" xsi:type="number">1</item>
+                                                                                        <item name="validation" xsi:type="array">
+                                                                                            <item name="required-entry" xsi:type="boolean">true</item>
+                                                                                            <item name="no-whitespace" xsi:type="boolean">true</item>
+                                                                                            <item name="validate-currency-dollar" xsi:type="boolean">true</item>
+                                                                                            <item name="validate-not-negative-number" xsi:type="boolean">true</item>
+                                                                                            <item name="validate-greater-than-zero" xsi:type="boolean">true</item>
+                                                                                        </item>
+                                                                                    </item>
+                                                                                </item>
+                                                                                <!-- form ends here -->
+                                                                            </item>
+                                                                        </item>
+                                                                    </item>
+                                                                </item>
+                                                            </item>
+                                                        </item>
+                                                    </item>
+                                                </item>
+                                            </item>
+                                        </item>
+                                    </item>
+                                </item>
+                            </item>
+                        </item>
+                    </argument>
+                </arguments>
+        </referenceBlock>
+    </body>
+</page>

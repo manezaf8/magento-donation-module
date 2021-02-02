@@ -1,0 +1,32 @@
+<hr />
+<div>
+    <form data-role="save" data-bind="submit:save" method="post" id="donation-checkout-form" class="form">
+        <fieldset class="fieldset">
+            <legend data-bind="i18n: 'Would you like to donate to charity?'"></legend><br/>
+
+            <button type="button" data-bind="click: showAmountField" class="showAmountFieldClass primary"
+                id="showAmountFieldId">
+                <span data-bind="i18n: '+ Donate Here +'"></span>
+            </button> <br/><br/>
+            <div id="amountField" class="amountField" style="display: none;">
+
+                <!-- ko foreach: getRegion('donation-checkout-form-fields') -->
+                <!-- ko template: getTemplate() -->
+                <!-- /ko -->
+                <!--/ko-->
+            </div>
+        </fieldset>
+        <div id="buttonField" class="buttonField" style="display: none;">
+            <div class="actions-toolbar">
+                <input name="context" type="hidden" value="checkout" />
+                <div class="primary">
+                    <button type="submit" class="action action-save primary">
+                        <span data-bind="i18n: 'Submit Donation'"></span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div>
+<hr />
