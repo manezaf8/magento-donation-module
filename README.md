@@ -9,9 +9,9 @@ The Donation Module
 ### Type 2: Composer
 
  - Make the module available in a composer repository for example:
-    - private repository `repo.sqli.co`
- - Install the module composer by running `composer require sqli/module-donation`
- - enable the module by running `php bin/magento module:enable Sqli_Donation`
+
+ - Install the module composer by running `composer require maneza/module-donation`
+ - enable the module by running `php bin/magento module:enable Maneza_Donation`
  - apply database updates by running `php bin/magento setup:upgrade`\*
  - Flush the cache by running `php bin/magento cache:flush`
 
@@ -24,10 +24,10 @@ The Donation Module
 ## Specifications
 
  - Cronjob
-	- sqli_donation_scheduledonation
+	- maneza_donation_scheduledonation
 
  - Cache
-	- CacheDonation - cachedonation_cache_tag > Sqli\Donation\Model\Cache\CacheDonation
+	- CacheDonation - cachedonation_cache_tag > Maneza\Donation\Model\Cache\CacheDonation
 
  - Console Command
 	- donations

@@ -5,7 +5,7 @@
  */
 declare(strict_types=1);
 
-namespace Sqli\Donation\Api\Data;
+namespace Maneza\Donation\Api\Data;
 
 interface DonationInterface extends \Magento\Framework\Api\ExtensibleDataInterface
 {
@@ -22,7 +22,7 @@ interface DonationInterface extends \Magento\Framework\Api\ExtensibleDataInterfa
     /**
      * Set donation_id
      * @param string $donationId
-     * @return \Sqli\Donation\Api\Data\DonationInterface
+     * @return \Maneza\Donation\Api\Data\DonationInterface
      */
     public function setDonationId($donationId);
 
@@ -35,23 +35,23 @@ interface DonationInterface extends \Magento\Framework\Api\ExtensibleDataInterfa
     /**
      * Set donation
      * @param string $donation
-     * @return \Sqli\Donation\Api\Data\DonationInterface
+     * @return \Maneza\Donation\Api\Data\DonationInterface
      */
     public function setDonationAmount($donation);
 
     /**
      * Retrieve existing extension attributes object or create a new one.
-     * @return \Sqli\Donation\Api\Data\DonationExtensionInterface|null
+     * @return \Maneza\Donation\Api\Data\DonationExtensionInterface|null
      */
     public function getExtensionAttributes();
 
     /**
      * Set an extension attributes object.
-     * @param \Sqli\Donation\Api\Data\DonationExtensionInterface $extensionAttributes
+     * @param \Maneza\Donation\Api\Data\DonationExtensionInterface $extensionAttributes
      * @return $this
      */
     public function setExtensionAttributes(
-        \Sqli\Donation\Api\Data\DonationExtensionInterface $extensionAttributes
+        \Maneza\Donation\Api\Data\DonationExtensionInterface $extensionAttributes
     );
 }
 

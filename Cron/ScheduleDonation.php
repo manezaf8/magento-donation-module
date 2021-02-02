@@ -5,7 +5,7 @@
  */
 declare(strict_types=1);
 
-namespace Sqli\Donation\Cron;
+namespace Maneza\Donation\Cron;
 
 class ScheduleDonation
 {

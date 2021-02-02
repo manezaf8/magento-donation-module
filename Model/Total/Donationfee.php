@@ -1,12 +1,12 @@
 <?php
-namespace Sqli\Donation\Model\Total;
+namespace Maneza\Donation\Model\Total;
 
 class Donationfee extends \Magento\Quote\Model\Quote\Address\Total\AbstractTotal
 {
     /**
      * donationFactory
      *
-     * @var \Sqli\Donation\Model\Donation $donationFactory
+     * @var \Maneza\Donation\Model\Donation $donationFactory
      */
     protected $donationFactory;
 
@@ -25,16 +25,16 @@ class Donationfee extends \Magento\Quote\Model\Quote\Address\Total\AbstractTotal
     protected $request;
 
     /**
-     * @var \Sqli\Donation\Api\Data\DonationInterface $donationInterface
+     * @var \Maneza\Donation\Api\Data\DonationInterface $donationInterface
      */
     protected $donationInterface;
 
     public function __construct(
-        \Sqli\Donation\Api\Data\DonationInterface $donationInterface,
+        \Maneza\Donation\Api\Data\DonationInterface $donationInterface,
         \Magento\Framework\App\Request\Http $request,
         \Magento\Quote\Model\QuoteValidator $quoteValidator,
         \Magento\Framework\Json\Helper\Data $helper,
-        \Sqli\Donation\Model\DonationFactory $donationFactory
+        \Maneza\Donation\Model\DonationFactory $donationFactory
         )
     {
         $this->donationInterface = $donationInterface;

@@ -5,9 +5,9 @@
  */
 declare(strict_types=1);
 
-namespace Sqli\Donation\Model\Data;
+namespace Maneza\Donation\Model\Data;
 
-use Sqli\Donation\Api\Data\DonationInterface;
+use Maneza\Donation\Api\Data\DonationInterface;
 
 class Donation extends \Magento\Framework\Api\AbstractExtensibleObject implements DonationInterface
 {
@@ -24,7 +24,7 @@ class Donation extends \Magento\Framework\Api\AbstractExtensibleObject implement
     /**
      * Set donation_id
      * @param string $donationId
-     * @return \Sqli\Donation\Api\Data\DonationInterface
+     * @return \Maneza\Donation\Api\Data\DonationInterface
      */
     public function setDonationId($donationId)
     {
@@ -43,7 +43,7 @@ class Donation extends \Magento\Framework\Api\AbstractExtensibleObject implement
     /**
      * Set donation amount
      * @param string $donationAmount
-     * @return \Sqli\Donation\Api\Data\DonationInterface
+     * @return \Maneza\Donation\Api\Data\DonationInterface
      */
     public function setDonationAmount($donation)
     {
@@ -52,7 +52,7 @@ class Donation extends \Magento\Framework\Api\AbstractExtensibleObject implement
 
     /**
      * Retrieve existing extension attributes object or create a new one.
-     * @return \Sqli\Donation\Api\Data\DonationExtensionInterface|null
+     * @return \Maneza\Donation\Api\Data\DonationExtensionInterface|null
      */
     public function getExtensionAttributes()
     {
@@ -61,17 +61,17 @@ class Donation extends \Magento\Framework\Api\AbstractExtensibleObject implement
 
     /**
      * Set an extension attributes object.
-     * @param \Sqli\Donation\Api\Data\DonationExtensionInterface $extensionAttributes
+     * @param \Maneza\Donation\Api\Data\DonationExtensionInterface $extensionAttributes
      * @return $this
      */
     public function setExtensionAttributes(
-        \Sqli\Donation\Api\Data\DonationExtensionInterface $extensionAttributes
+        \Maneza\Donation\Api\Data\DonationExtensionInterface $extensionAttributes
     ) {
         return $this->_setExtensionAttributes($extensionAttributes);
     }
 
     public function save(
-        \Sqli\Donation\Api\Data\DonationInterface $donation
+        \Maneza\Donation\Api\Data\DonationInterface $donation
     ) {
         /* if (empty($donation->getStoreId())) {
             $storeId = $this->storeManager->getStore()->getId();
@@ -81,7 +81,7 @@ class Donation extends \Magento\Framework\Api\AbstractExtensibleObject implement
         $donationData = $this->extensibleDataObjectConverter->toNestedArray(
             $donation,
             [],
-            \Sqli\Donation\Api\Data\DonationInterface::class
+            \Maneza\Donation\Api\Data\DonationInterface::class
         );
         
         $donationModel = $this->donationFactory->create()->setData($donationData);

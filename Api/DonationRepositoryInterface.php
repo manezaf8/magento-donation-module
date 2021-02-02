@@ -5,7 +5,7 @@
  */
 declare(strict_types=1);
 
-namespace Sqli\Donation\Api;
+namespace Maneza\Donation\Api;
 
 use Magento\Framework\Api\SearchCriteriaInterface;
 
@@ -14,18 +14,18 @@ interface DonationRepositoryInterface
 
     /**
      * Save Donation
-     * @param \Sqli\Donation\Api\Data\DonationInterface $donation
-     * @return \Sqli\Donation\Api\Data\DonationInterface
+     * @param \Maneza\Donation\Api\Data\DonationInterface $donation
+     * @return \Maneza\Donation\Api\Data\DonationInterface
      * @throws \Magento\Framework\Exception\LocalizedException
      */
     public function save(
-        \Sqli\Donation\Api\Data\DonationInterface $donation
+        \Maneza\Donation\Api\Data\DonationInterface $donation
     );
 
     /**
      * Retrieve Donation
      * @param string $donationId
-     * @return \Sqli\Donation\Api\Data\DonationInterface
+     * @return \Maneza\Donation\Api\Data\DonationInterface
      * @throws \Magento\Framework\Exception\LocalizedException
      */
     public function get($donationId);
@@ -33,7 +33,7 @@ interface DonationRepositoryInterface
     /**
      * Retrieve Donation matching the specified criteria.
      * @param \Magento\Framework\Api\SearchCriteriaInterface $searchCriteria
-     * @return \Sqli\Donation\Api\Data\DonationSearchResultsInterface
+     * @return \Maneza\Donation\Api\Data\DonationSearchResultsInterface
      * @throws \Magento\Framework\Exception\LocalizedException
      */
     public function getList(
@@ -42,12 +42,12 @@ interface DonationRepositoryInterface
 
     /**
      * Delete Donation
-     * @param \Sqli\Donation\Api\Data\DonationInterface $donation
+     * @param \Maneza\Donation\Api\Data\DonationInterface $donation
      * @return bool true on success
      * @throws \Magento\Framework\Exception\LocalizedException
      */
     public function delete(
-        \Sqli\Donation\Api\Data\DonationInterface $donation
+        \Maneza\Donation\Api\Data\DonationInterface $donation
     );
 
     /**

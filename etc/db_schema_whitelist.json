@@ -1,5 +1,5 @@
 {
-    "sqli_donation_donation": {
+    "Maneza_donation_donation": {
         "column": {
             "donation_id": true,
             "donation_amount": true

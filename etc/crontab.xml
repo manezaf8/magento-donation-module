@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
 	<group id="default">
-		<job instance="Sqli\Donation\Cron\ScheduleDonation" method="execute" name="sqli_donation_scheduledonation">
+		<job instance="Maneza\Donation\Cron\ScheduleDonation" method="execute" name="Maneza_donation_scheduledonation">
 			<schedule>*/5 * * * *</schedule>
 		</job>
 	</group>

@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
 	<menu>
-		<add id="Sqli::top_level" module="Sqli_Donation" resource="Magento_Backend::content" sortOrder="9999" title="Sqli"/>
-		<add action="sqli_donation/donation/index" id="Sqli_Donation::sqli_donation_donation" module="Sqli_Donation" parent="Sqli::top_level" resource="Magento_Backend::content" sortOrder="9999" title="Donation"/>
+		<add id="Maneza::top_level" module="Maneza_Donation" resource="Magento_Backend::content" sortOrder="9999" title="Maneza"/>
+		<add action="maneza_donation/donation/index" id="Maneza_Donation::maneza_donation_donation" module="Maneza_Donation" parent="Maneza::top_level" resource="Magento_Backend::content" sortOrder="9999" title="Donation"/>
 	</menu>
 </config>

@@ -1,11 +1,11 @@
 {
-    "name": "sqli/module-donation",
+    "name": "maneza/module-donation",
     "description": "The Donation Module to collect donations for a charity",
     "type": "magento2-module",
     "license": "proprietary",
     "authors": [
         {
-            "email": "nmabetshe@sqli.com",
+            "email": "bmaneza@gmail.com",
             "name": "Ntabethemba Mabetshe"
         }
     ],
@@ -17,7 +17,7 @@
             "registration.php"
         ],
         "psr-4": {
-            "Sqli\\Donation\\": ""
+            "Maneza\\Donation\\": ""
         }
     }
 }

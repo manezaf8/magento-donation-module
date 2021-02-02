@@ -3,16 +3,16 @@
 	<acl>
 		<resources>
 			<resource id="Magento_Backend::admin">
-				<resource id="Sqli_Donation::Donation" sortOrder="10" title="Donation">
-					<resource id="Sqli_Donation::Donation_save" sortOrder="10" title="Save Donation"/>
-					<resource id="Sqli_Donation::Donation_delete" sortOrder="20" title="Delete Donation"/>
-					<resource id="Sqli_Donation::Donation_update" sortOrder="30" title="Update Donation"/>
-					<resource id="Sqli_Donation::Donation_view" sortOrder="40" title="View Donation"/>
+				<resource id="Maneza_Donation::Donation" sortOrder="10" title="Donation">
+					<resource id="Maneza_Donation::Donation_save" sortOrder="10" title="Save Donation"/>
+					<resource id="Maneza_Donation::Donation_delete" sortOrder="20" title="Delete Donation"/>
+					<resource id="Maneza_Donation::Donation_update" sortOrder="30" title="Update Donation"/>
+					<resource id="Maneza_Donation::Donation_view" sortOrder="40" title="View Donation"/>
 				</resource>
 				<resource id="Magento_Backend::stores">
 					<resource id="Magento_Backend::stores_settings">
 						<resource id="Magento_Config::config">
-							<resource id="Sqli_Donation::config_sqli_donation" title="donation"/>
+							<resource id="Maneza_Donation::config_Maneza_donation" title="donation"/>
 						</resource>
 					</resource>
 				</resource>

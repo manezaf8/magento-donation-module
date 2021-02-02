@@ -5,7 +5,7 @@
  */
 declare(strict_types=1);
 
-namespace Sqli\Donation\Controller\Adminhtml\Donation;
+namespace Maneza\Donation\Controller\Adminhtml\Donation;
 
 class Index extends \Magento\Backend\App\Action
 {

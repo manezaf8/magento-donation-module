@@ -1,25 +1,25 @@
 <?xml version="1.0" ?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-	<preference for="Sqli\Donation\Api\DonationRepositoryInterface" type="Sqli\Donation\Model\DonationRepository"/>
-	<preference for="Sqli\Donation\Api\Data\DonationInterface" type="Sqli\Donation\Model\Data\Donation"/>
-	<preference for="Sqli\Donation\Api\Data\DonationSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
-	<virtualType name="Sqli\Donation\Model\ResourceModel\Donation\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+	<preference for="Maneza\Donation\Api\DonationRepositoryInterface" type="Maneza\Donation\Model\DonationRepository"/>
+	<preference for="Maneza\Donation\Api\Data\DonationInterface" type="Maneza\Donation\Model\Data\Donation"/>
+	<preference for="Maneza\Donation\Api\Data\DonationSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+	<virtualType name="Maneza\Donation\Model\ResourceModel\Donation\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
 		<arguments>
-			<argument name="mainTable" xsi:type="string">sqli_donation_donation</argument>
-			<argument name="resourceModel" xsi:type="string">Sqli\Donation\Model\ResourceModel\Donation\Collection</argument>
+			<argument name="mainTable" xsi:type="string">maneza_donation_donation</argument>
+			<argument name="resourceModel" xsi:type="string">Maneza\Donation\Model\ResourceModel\Donation\Collection</argument>
 		</arguments>
 	</virtualType>
 	<type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
 		<arguments>
 			<argument name="collections" xsi:type="array">
-				<item name="sqli_donation_donation_listing_data_source" xsi:type="string">Sqli\Donation\Model\ResourceModel\Donation\Grid\Collection</item>
+				<item name="maneza_donation_donation_listing_data_source" xsi:type="string">Maneza\Donation\Model\ResourceModel\Donation\Grid\Collection</item>
 			</argument>
 		</arguments>
 	</type>
 	<type name="Magento\Framework\Console\CommandList">
 		<arguments>
 			<argument name="commands" xsi:type="array">
-				<item name="donations" xsi:type="object">Sqli\Donation\Console\Command\Donations</item>
+				<item name="donations" xsi:type="object">Maneza\Donation\Console\Command\Donations</item>
 			</argument>
 		</arguments>
 	</type>

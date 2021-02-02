@@ -5,7 +5,7 @@
  */
 declare(strict_types=1);
 
-namespace Sqli\Donation\Model\ResourceModel\Donation;
+namespace Maneza\Donation\Model\ResourceModel\Donation;
 
 class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection
 {
@@ -23,8 +23,8 @@ class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\Ab
     protected function _construct()
     {
         $this->_init(
-            \Sqli\Donation\Model\Donation::class,
-            \Sqli\Donation\Model\ResourceModel\Donation::class
+            \Maneza\Donation\Model\Donation::class,
+            \Maneza\Donation\Model\ResourceModel\Donation::class
         );
     }
 }

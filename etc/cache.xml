@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Cache/etc/cache.xsd">
-	<type instance="Sqli\Donation\Model\Cache\CacheDonation" name="cachedonation_cache_tag" translate="label,description">
+	<type instance="Maneza\Donation\Model\Cache\CacheDonation" name="cachedonation_cache_tag" translate="label,description">
 		<label>Donation Cache</label>
 		<description>Caches donation data</description>
 	</type>

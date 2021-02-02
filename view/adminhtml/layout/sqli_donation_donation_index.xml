@@ -3,7 +3,7 @@
 	<update handle="styles"/>
 	<body>
 		<referenceContainer name="content">
-			<uiComponent name="sqli_donation_donation_listing"/>
+			<uiComponent name="maneza_donation_donation_listing"/>
 		</referenceContainer>
 	</body>
 </page>

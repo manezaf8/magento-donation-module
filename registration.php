@@ -5,5 +5,5 @@
  */
 use Magento\Framework\Component\ComponentRegistrar;
 
-ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Sqli_Donation', __DIR__);
+ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Maneza_Donation', __DIR__);
 

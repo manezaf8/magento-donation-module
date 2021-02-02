@@ -1,5 +1,5 @@
 <?php
-namespace Sqli\Donation\Block;
+namespace Maneza\Donation\Block;
 
 class Index extends \Magento\Framework\View\Element\Template
 {
@@ -11,7 +11,7 @@ class Index extends \Magento\Framework\View\Element\Template
      */
     public function __construct(
         \Magento\Framework\View\Element\Template\Context $context,
-        \Sqli\Donation\Model\DonationFactory $DonationFactory,
+        \Maneza\Donation\Model\DonationFactory $DonationFactory,
         array $data = []
     ) {
         $this->donationFactory = $DonationFactory;

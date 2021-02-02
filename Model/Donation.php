@@ -5,11 +5,11 @@
  */
 declare(strict_types=1);
 
-namespace Sqli\Donation\Model;
+namespace Maneza\Donation\Model;
 
 use Magento\Framework\Api\DataObjectHelper;
-use Sqli\Donation\Api\Data\DonationInterface;
-use Sqli\Donation\Api\Data\DonationInterfaceFactory;
+use Maneza\Donation\Api\Data\DonationInterface;
+use Maneza\Donation\Api\Data\DonationInterfaceFactory;
 
 class Donation extends \Magento\Framework\Model\AbstractModel
 {
@@ -18,15 +18,15 @@ class Donation extends \Magento\Framework\Model\AbstractModel
 
     protected $dataObjectHelper;
 
-    protected $_eventPrefix = 'sqli_donation_donation';
+    protected $_eventPrefix = 'maneza_donation_donation';
 
     /**
      * @param \Magento\Framework\Model\Context $context
      * @param \Magento\Framework\Registry $registry
      * @param DonationInterfaceFactory $donationDataFactory
      * @param DataObjectHelper $dataObjectHelper
-     * @param \Sqli\Donation\Model\ResourceModel\Donation $resource
-     * @param \Sqli\Donation\Model\ResourceModel\Donation\Collection $resourceCollection
+     * @param \Maneza\Donation\Model\ResourceModel\Donation $resource
+     * @param \Maneza\Donation\Model\ResourceModel\Donation\Collection $resourceCollection
      * @param array $data
      */
     public function __construct(
@@ -34,8 +34,8 @@ class Donation extends \Magento\Framework\Model\AbstractModel
         \Magento\Framework\Registry $registry,
         DonationInterfaceFactory $donationDataFactory,
         DataObjectHelper $dataObjectHelper,
-        \Sqli\Donation\Model\ResourceModel\Donation $resource,
-        \Sqli\Donation\Model\ResourceModel\Donation\Collection $resourceCollection,
+        \Maneza\Donation\Model\ResourceModel\Donation $resource,
+        \Maneza\Donation\Model\ResourceModel\Donation\Collection $resourceCollection,
         array $data = []
     ) {
         $this->donationDataFactory = $donationDataFactory;
@@ -45,7 +45,7 @@ class Donation extends \Magento\Framework\Model\AbstractModel
 
     protected function _construct()
     {
-        $this->_init('Sqli\Donation\Model\ResourceModel\Donation'); 
+        $this->_init('Maneza\Donation\Model\ResourceModel\Donation'); 
     }
 
 }

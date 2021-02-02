@@ -1,8 +1,8 @@
 <?php
-namespace Sqli\Donation\Model\Donation;
+namespace Maneza\Donation\Model\Donation;
 
 use Magento\Framework\App\Request\DataPersistorInterface;
-use Sqli\Donation\Model\ResourceModel\Donation\CollectionFactory;
+use Maneza\Donation\Model\ResourceModel\Donation\CollectionFactory;
 
 class DataProvider extends \Magento\Ui\DataProvider\AbstractDataProvider
 {
@@ -66,13 +66,13 @@ class DataProvider extends \Magento\Ui\DataProvider\AbstractDataProvider
         foreach ($items as $model) {
             $this->loadedData[$model->getId()] = $model->getData();
         }
-        $data = $this->dataPersistor->get('sqli_donation_donation');
+        $data = $this->dataPersistor->get('maneza_donation_donation');
         
         if (!empty($data)) {
             $model = $this->collection->getNewEmptyItem();
             $model->setData($data);
             $this->loadedData[$model->getId()] = $model->getData();
-            $this->dataPersistor->clear('sqli_donation_donation');
+            $this->dataPersistor->clear('maneza_donation_donation');
         }
         
         return $this->loadedData;

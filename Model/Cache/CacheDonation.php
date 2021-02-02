@@ -5,7 +5,7 @@
  */
 declare(strict_types=1);
 
-namespace Sqli\Donation\Model\Cache;
+namespace Maneza\Donation\Model\Cache;
 
 class CacheDonation extends \Magento\Framework\Cache\Frontend\Decorator\TagScope
 {

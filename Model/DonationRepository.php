@@ -5,7 +5,7 @@
  */
 declare(strict_types=1);
 
-namespace Sqli\Donation\Model;
+namespace Maneza\Donation\Model;
 
 use Magento\Framework\Api\DataObjectHelper;
 use Magento\Framework\Api\ExtensibleDataObjectConverter;
@@ -16,11 +16,11 @@ use Magento\Framework\Exception\CouldNotSaveException;
 use Magento\Framework\Exception\NoSuchEntityException;
 use Magento\Framework\Reflection\DataObjectProcessor;
 use Magento\Store\Model\StoreManagerInterface;
-use Sqli\Donation\Api\Data\DonationInterfaceFactory;
-use Sqli\Donation\Api\Data\DonationSearchResultsInterfaceFactory;
-use Sqli\Donation\Api\DonationRepositoryInterface;
-use Sqli\Donation\Model\ResourceModel\Donation as ResourceDonation;
-use Sqli\Donation\Model\ResourceModel\Donation\CollectionFactory as DonationCollectionFactory;
+use Maneza\Donation\Api\Data\DonationInterfaceFactory;
+use Maneza\Donation\Api\Data\DonationSearchResultsInterfaceFactory;
+use Maneza\Donation\Api\DonationRepositoryInterface;
+use Maneza\Donation\Model\ResourceModel\Donation as ResourceDonation;
+use Maneza\Donation\Model\ResourceModel\Donation\CollectionFactory as DonationCollectionFactory;
 
 class DonationRepository implements DonationRepositoryInterface
 {
@@ -90,7 +90,7 @@ class DonationRepository implements DonationRepositoryInterface
      * {@inheritdoc}
      */
     public function save(
-        \Sqli\Donation\Api\Data\DonationInterface $donation
+        \Maneza\Donation\Api\Data\DonationInterface $donation
     ) {
         /* if (empty($donation->getStoreId())) {
             $storeId = $this->storeManager->getStore()->getId();
@@ -100,7 +100,7 @@ class DonationRepository implements DonationRepositoryInterface
         $donationData = $this->extensibleDataObjectConverter->toNestedArray(
             $donation,
             [],
-            \Sqli\Donation\Api\Data\DonationInterface::class
+            \Maneza\Donation\Api\Data\DonationInterface::class
         );
         
         $donationModel = $this->donationFactory->create()->setData($donationData);
@@ -139,7 +139,7 @@ class DonationRepository implements DonationRepositoryInterface
         
         $this->extensionAttributesJoinProcessor->process(
             $collection,
-            \Sqli\Donation\Api\Data\DonationInterface::class
+            \Maneza\Donation\Api\Data\DonationInterface::class
         );
         
         $this->collectionProcessor->process($criteria, $collection);
@@ -161,7 +161,7 @@ class DonationRepository implements DonationRepositoryInterface
      * {@inheritdoc}
      */
     public function delete(
-        \Sqli\Donation\Api\Data\DonationInterface $donation
+        \Maneza\Donation\Api\Data\DonationInterface $donation
     ) {
         try {
             $donationModel = $this->donationFactory->create();

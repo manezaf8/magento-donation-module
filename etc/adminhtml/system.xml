@@ -1,13 +1,13 @@
 <?xml version="1.0" ?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
 	<system>
-		<tab id="sqli" sortOrder="999" translate="label">
-			<label>sqli</label>
+		<tab id="maneza" sortOrder="999" translate="label">
+			<label>maneza</label>
 		</tab>
 		<section id="donation" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
 			<label>donation</label>
-			<tab>sqli</tab>
-			<resource>Sqli_Donation::config_sqli_donation</resource>
+			<tab>maneza</tab>
+			<resource>Maneza_Donation::config_maneza_donation</resource>
 			<group id="enable" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
 				<label>enable</label>
 				<field id="enabled" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">

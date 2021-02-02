@@ -5,7 +5,7 @@
  */
 declare(strict_types=1);
 
-namespace Sqli\Donation\Model\ResourceModel;
+namespace Maneza\Donation\Model\ResourceModel;
 
 class Donation extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
 {
@@ -17,7 +17,7 @@ class Donation extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
      */
     protected function _construct()
     {
-        $this->_init('sqli_donation_donation', 'donation_id');
+        $this->_init('maneza_donation_donation', 'donation_id');
     }
 }
 

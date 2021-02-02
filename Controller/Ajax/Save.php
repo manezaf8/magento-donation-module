@@ -1,7 +1,7 @@
 <?php
-namespace Sqli\Donation\Controller\Ajax;
+namespace Maneza\Donation\Controller\Ajax;
 
-use \Sqli\Donation\Api\Data\DonationInterface;
+use \Maneza\Donation\Api\Data\DonationInterface;
 
 class Save extends \Magento\Framework\App\Action\Action 
 {
@@ -26,7 +26,7 @@ class Save extends \Magento\Framework\App\Action\Action
     protected $resultRawFactory;
 
     /**
-     * @var Sqli\Donation\Model\DonationFactory
+     * @var Maneza\Donation\Model\DonationFactory
      */
     protected $donationFactory;
 
@@ -41,7 +41,7 @@ class Save extends \Magento\Framework\App\Action\Action
        \Magento\Framework\Json\Helper\Data $helper,
        \Magento\Framework\Controller\Result\JsonFactory $resultJsonFactory,
        \Magento\Framework\Controller\Result\RawFactory $resultRawFactory,
-       \Sqli\Donation\Model\DonationFactory $donationFactory
+       \Maneza\Donation\Model\DonationFactory $donationFactory
     )
     {
         $this->donationFactory = $donationFactory;

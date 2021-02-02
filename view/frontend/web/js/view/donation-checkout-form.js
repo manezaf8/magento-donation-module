@@ -6,7 +6,7 @@ define([
     'Magento_Ui/js/form/form',
     'mage/validation',
     'Magento_Ui/js/modal/alert',
-    'Sqli_Donation/js/view/action/save-donation'
+    'Maneza_Donation/js/view/action/save-donation'
 ], function (
         $,
         ko,
